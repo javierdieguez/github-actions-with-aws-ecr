@@ -15,7 +15,7 @@ env:
   AWS_REGION: sa-east-1                   # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: my_repository_test           # set this to your Amazon ECR repository name
   ECS_SERVICE: sample-app-service                 # set this to your Amazon ECS service name
-  ECS_CLUSTER:  arn:aws:ecs:sa-east-1:862788145261:cluster/my-cluster-test-deploy-ok                 # set this to your Amazon ECS cluster name
+  ECS_CLUSTER:  my-cluster-test-deploy-ok                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: amazonTasks/main.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: nginx           # set this to the name of the container in the
