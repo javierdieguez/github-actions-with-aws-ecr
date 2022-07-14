@@ -12,7 +12,7 @@ on:
       - main
 
 env:
-  AWS_REGION: sa-east-1                   # set this to your preferred AWS region, e.g. us-west-1
+  AWS_REGION: us-east-2                   # set this to your preferred AWS region, e.g. us-west-1
   ECR_REPOSITORY: my_repository_test           # set this to your Amazon ECR repository name
   ECS_SERVICE: sample-app-service                 # set this to your Amazon ECS service name
   ECS_CLUSTER: arn:aws:ecs:us-east-2:862788145261:cluster/my-cluster                 # set this to your Amazon ECS cluster name
