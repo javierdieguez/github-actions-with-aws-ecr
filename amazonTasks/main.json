@@ -101,7 +101,6 @@
       "targetId": null,
       "targetType": null,
       "value": null,
-      #"name": "ecs.capability.task-eni"
       "name": "com.amazonaws.ecs.capability.ecr-auth"
     }
   ],
