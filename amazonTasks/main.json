@@ -61,8 +61,7 @@
   "memory": null,
   "taskRoleArn": null,
   "compatibilities": [
-    "EC2",
-    "FARGATE"
+    "EC2"
   ],
   "taskDefinitionArn": "arn:aws:ecs:sa-east-1:862788145261:task-definition/my-task-definition-test:1",
   "family": "my-task-definition-test",
