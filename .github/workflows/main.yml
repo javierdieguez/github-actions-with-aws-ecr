@@ -1,4 +1,3 @@
-
 # This workflow uses actions that are not certified by GitHub.
 # São fornecidas por terceiros e regidas por
 # termos de serviço, política de privacidade e suporte separados
@@ -13,12 +12,12 @@ on:
 
 env:
   AWS_REGION: sa-east-1                   # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: my_repository_test           # set this to your Amazon ECR repository name
-  ECS_SERVICE: sample-app-service                 # set this to your Amazon ECS service name
-  ECS_CLUSTER:  my-cluster-test-deploy-ok                 # set this to your Amazon ECS cluster name
+  ECR_REPOSITORY: my_repository_aws_deploy           # set this to your Amazon ECR repository name
+  ECS_SERVICE: sample-app-service-test                 # set this to your Amazon ECS service name
+  ECS_CLUSTER: cluster-test                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: amazonTasks/main.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: nginx           # set this to the name of the container in the
+  CONTAINER_NAME: sample-app           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
 jobs:
