@@ -63,7 +63,7 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:sa-east-1:862788145261:task-definition/my-task-definition-test:1",
+  "taskDefinitionArn": "arn:aws:ecs:sa-east-1:862788145261:task-definition/my-task-definition-test:6",
   "family": "my-task-definition-test",
   "requiresAttributes": [
     {
