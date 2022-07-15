@@ -1,6 +1,5 @@
 {
   "ipcMode": null,
-  #"executionRoleArn": "arn:aws:iam::862788145261:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::862788145261:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
@@ -15,10 +14,6 @@
           "awslogs-stream-prefix": "ecs"
         }
       },
-      #"entryPoint": [
-      #  "sh",
-      #  "-c"
-      #],
       "entryPoint": null,
       "portMappings": [
         {
@@ -29,9 +24,6 @@
           "containerPort": 8080
         }
       ],
-      #"command": [
-      #  "/bin/sh -c \"echo '<html> <head> <title>Amazon ECS Sample App</title> <style>body {margin-top: 40px; background-color: #333;} </style> </head><body> <div style=color:white;text-align:center> <h1>Amazon ECS Sample App</h1> <h2>Congratulations!</h2> <p>Your application is now running on a container in Amazon ECS.</p> </div></body></html>' >  /usr/local/apache2/htdocs/index.html && httpd-foreground\""
-      #],
       "command": null,
       "linuxParameters": null,
       "cpu": 256,
@@ -44,7 +36,6 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-     # "memoryReservation": 512,
       "memoryReservation": 1024,
       "volumesFrom": [],
       "stopTimeout": null,
@@ -118,18 +109,8 @@
   ],
   "pidMode": null,
   "requiresCompatibilities": [
-    #"FARGATE"
     "EC2"
   ],
-  #"networkMode": "awsvpc",
-  #"runtimePlatform": null,
-  #"cpu": "256",
-  #"revision": 1,
-  #"status": "ACTIVE",
-  #"inferenceAccelerators": null,
-  #"proxyConfiguration": null,
-  #"volumes": []
-
   "networkMode": null,
     "cpu": null,
     "revision": 1,
