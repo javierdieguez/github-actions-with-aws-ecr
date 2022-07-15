@@ -9,7 +9,7 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/first-run-task-definition",
+          "awslogs-group": "/ecs/my-task-definition-test",
           "awslogs-region": "sa-east-1",
           "awslogs-stream-prefix": "ecs"
         }
@@ -64,13 +64,13 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": "arn:aws:iam::862788145261:role/ecsTaskExecutionRole",
+  "taskRoleArn": null,
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:sa-east-1:862788145261:task-definition/first-run-task-definition-new:1",
-  "family": "first-run-task-definition-new",
+  "taskDefinitionArn": "arn:aws:ecs:sa-east-1:862788145261:task-definition/my-task-definition-test:1",
+  "family": "my-task-definition-test",
   "requiresAttributes": [
     {
       "targetId": null,
@@ -95,12 +95,6 @@
       "targetType": null,
       "value": null,
       "name": "com.amazonaws.ecs.capability.docker-remote-api.1.21"
-    },
-    {
-      "targetId": null,
-      "targetType": null,
-      "value": null,
-      "name": "com.amazonaws.ecs.capability.task-iam-role"
     },
     {
       "targetId": null,
